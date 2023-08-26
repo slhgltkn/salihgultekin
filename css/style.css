@@ -127,7 +127,6 @@
 }
 
 .sc3 {
-    background-color: aqua;
     margin: 0 auto;
     align-items: center;
     width: 100%;
@@ -135,7 +134,6 @@
 }
 
 .sc1 {
-    background-color: blue;
     margin: 0 auto;
     align-items: center;
     width: 100%;
@@ -143,7 +141,7 @@
 }
 
 .sc2 {
-    background-color: brown;
+
     margin: 0 auto;
     align-items: center;
     width: 100%;
