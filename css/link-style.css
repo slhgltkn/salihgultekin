@@ -1,0 +1,90 @@
+#ortaDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+}
+
+.link-button:hover i {
+    display: inline-block;
+}
+
+.link-button i {
+    display: none;
+    margin-left: 5px;
+}
+
+.link-button span {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.metin {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgb(255, 0, 0);
+    background-color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.h3 {
+    color: #f64d28;
+    font-size: 14px;
+}
+
+.h2 {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-align: center;
+}
+
+.h1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+}
+
+.hak {
+    text-align: center;
+    color: #919191;
+    font-size: 11px;
+}
+
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    color: #141414;
+    font-weight: bold;
+    font-size: 17px;
+    width: 375px;
+    height: 35px;
+    border-radius: 99px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.2s ease;
+
+    background-clip: padding-box;
+}
+
+.link-button:hover {
+
+    background-image: linear-gradient(to right, #ff6947, #fd4920);
+    transform: scale(1);
+    color: #ffffff;
+    background-color: transparent;
+
+}
