@@ -126,12 +126,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.sc3 {
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    height: 750px;
-}
+
 
 .sc1 {
     margin: 0 auto;
@@ -141,11 +136,16 @@
 }
 
 .sc2 {
-
     margin: 0 auto;
     align-items: center;
     width: 100%;
-    height: max-content;
+}
+
+.sc3 {
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    height: 750px;
 }
 
 .yanYana {
