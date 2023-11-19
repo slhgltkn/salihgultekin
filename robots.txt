@@ -1,4 +1,4 @@
 user-agent: *
 Allow:/
 
-Sitemap: https://slhgltkn.github.io/salihgultekin/sitemap.xml
+Sitemap: https://salihgultek.in/sitemap.xml

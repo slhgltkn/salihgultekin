@@ -1,0 +1,36 @@
+.container-images-language {
+    width: 35px;
+}
+
+.title-text {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.hakkimda-text {
+    line-height: 1.75;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    font-weight: 100;
+    font-size: 18px;
+    color: rgb(190, 190, 190);
+}
+
+.hakkimda-texts {
+    line-height: 1.05;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    align-content: center;
+    font-weight: 100;
+    font-size: 18px;
+    color: rgb(190, 190, 190);
+}

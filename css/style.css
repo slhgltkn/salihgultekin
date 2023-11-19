@@ -1,3 +1,41 @@
+.a-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.link-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: #dadada;
+    color: #141414;
+    font-weight: bold;
+    font-size: 15px;
+    width: 400px;
+    height: 25px;
+    border-radius: 99px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.2s ease;
+    background-clip: padding-box;
+}
+
+.link-button:hover {
+
+    background-image: linear-gradient(to right, #ff6947, #fd4920);
+    transform: scale(1);
+    color: #ffffff;
+    background-color: transparent;
+
+}
+
 .rectangle-container {
     position: fixed;
     left: 3%;
@@ -109,7 +147,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(55, 55, 55);
+    color: rgb(70, 70, 70);
     font-size: 35px;
     font-weight: 700;
 }
@@ -132,7 +170,7 @@
     margin: 0 auto;
     align-items: center;
     width: 100%;
-    height: 750px;
+    height: 800px;
 }
 
 .sc2 {
@@ -145,10 +183,28 @@
     margin: 0 auto;
     align-items: center;
     width: 100%;
-    height: 750px;
+
+}
+
+.sc4 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+
 }
 
 .yanYana {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    max-width: 100%;
+    flex-direction: row;
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -194,12 +250,12 @@
 }
 
 .slide-left {
-    left: 0;
+    left: 10%;
     transform: translateX(-100%);
 }
 
 .slide-right {
-    right: 0;
+    right: 0%;
     transform: translateX(100%);
 }
 
@@ -231,6 +287,15 @@
     width: 400px;
 }
 
+.form-send {
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    padding: 10px;
+    align-items: flex-start;
+}
+
 .exper-flex {
     margin-bottom: 15px;
     display: flex;
@@ -239,9 +304,10 @@
 
 
 .exper-container {
+    box-sizing: border-box;
     border-radius: 15px;
     width: 350px;
-    height: 400px;
+    height: 425px;
     background-color: rgb(15, 15, 15);
     padding: 10px;
     align-items: flex-start;
@@ -266,7 +332,7 @@
     align-content: center;
     align-items: center;
     border-radius: 50px;
-    width: 80%;
+    width: 85%;
     height: 30px;
     background-color: #1f1f1f;
 
@@ -322,6 +388,31 @@
     margin: 0;
 }
 
+.degrade-border {
+    width: 90px;
+    height: 90px;
+    background: rgb(5, 5, 5);
+    border-radius: 15px;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.degrade-border::before {
+    align-items: center;
+    border-radius: 15px;
+    content: '';
+    background-image: linear-gradient(to bottom, #f64d28 0%, #7472e6 100%);
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    position: absolute;
+    z-index: -1;
+}
+
 
 @keyframes moveUpDown {
     0% {
@@ -337,23 +428,28 @@
 
 
     .yanYana {
-        flex-direction: column;
-        margin: 0 auto;
+        justify-content: center;
+        display: flex;
         align-items: center;
-        width: 100%;
+        flex-wrap: wrap;
+        max-width: 100%;
         margin-top: 5px;
     }
 
     .sc2 {
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: max-content;
+
     }
 
     .exper-container {
+        box-sizing: border-box;
         border-radius: 15px;
-        width: 400px;
+        width: 350px;
+        max-width: 350px;
+        min-width: 350px;
         height: 450px;
         background-color: rgb(15, 15, 15);
         padding: 10px;
@@ -366,6 +462,42 @@
 
 
 @media (max-width: 875px) {
+
+
+    .link-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        background-color: #dadada;
+        color: #141414;
+        font-weight: bold;
+        font-size: 13px;
+        width: 75%;
+        height: 25px;
+        border-radius: 99px;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        text-align: center;
+        line-height: 1;
+        transition: all 0.2s ease;
+        background-clip: padding-box;
+    }
+
+    .hakkimda-texts {
+        line-height: 1.025;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        font-weight: 100;
+        font-size: 12px;
+        color: rgb(190, 190, 190);
+    }
+
+
+
     .circlecursor {
         width: 0px;
         height: 0px;
@@ -374,17 +506,18 @@
 
 
     .yanYana {
-        flex-direction: column;
         margin: 0 auto;
+        display: flex;
         align-items: center;
-        width: 100%;
-        margin-top: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
     }
 
     .exper-container {
         border-radius: 15px;
         width: 300px;
-        height: 450px;
+        height: 90%;
         background-color: rgb(15, 15, 15);
         padding: 10px;
         align-items: flex-start;
@@ -467,10 +600,11 @@
     }
 
     .sc2 {
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 1800px;
+
     }
 
     #laptopScale {
