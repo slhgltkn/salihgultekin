@@ -1,4 +1,18 @@
-user-agent: *
-Allow:/
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
 
 Sitemap: https://salihgultek.in/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Disallow: /private/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /private/
+
+User-agent: Yandex
+Allow: /
+Disallow: /private/
